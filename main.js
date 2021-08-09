@@ -12,6 +12,8 @@ let mainWindow, loadWindow = null;
 let localUrl = 'http://127.0.0.1:8000';
 let publicUrl = 'http://68.43.62.199:8000';
 
+require('dotenv').config();
+
 
 function getUrl()
 {

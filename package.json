@@ -1,13 +1,13 @@
 {
   "name": "sbs-prolink",
   "productName": "SBS Prolink",
-  "version": "1.0.154",
+  "version": "1.0.2",
   "description": "SBS Tournament Software",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder -p always"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "electron-builder": "^22.11.7"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "electron-log": "^4.4.1",
     "electron-reload": "^2.0.0-alpha.1",
     "electron-updater": "^4.3.9",
@@ -27,9 +28,11 @@
       "target": "nsis",
       "verifyUpdateCodeSignature": false,
       "publish": {
-        "provider": "generic",
-        "url": "http://scratchbowling.pythonanywhere.com/prolink/update/",
-        "useMultipleRangeRequest": false
+        "provider": "github",
+        "repo": "sbs-prolink",
+        "private": false,
+        "publishAutoUpdate": true,
+        "releaseType": "release"
       },
       "certificateFile": "mypfx.pfx",
       "certificatePassword": "password"
