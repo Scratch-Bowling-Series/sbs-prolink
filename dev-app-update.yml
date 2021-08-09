@@ -1,0 +1,4 @@
+provider: generic
+url: https://scratchbowling.pythonanywhere.com/media/prolink/update
+useMultipleRangeRequest: false
+updaterCacheDirName: sbs-prolink-updater
