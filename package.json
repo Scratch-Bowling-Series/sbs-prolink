@@ -29,10 +29,12 @@
       "verifyUpdateCodeSignature": false,
       "publish": {
         "provider": "github",
+        "owner": "ChristianJStarr",
         "repo": "sbs-prolink",
         "private": false,
         "publishAutoUpdate": true,
-        "releaseType": "release"
+        "releaseType": "release",
+        "token": "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"
       },
       "certificateFile": "mypfx.pfx",
       "certificatePassword": "password"
