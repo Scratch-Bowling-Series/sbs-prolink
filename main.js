@@ -10,14 +10,14 @@ let { ipcMain } = electron;
 let mainWindow, loadWindow = null;
 
 let localUrl = 'http://127.0.0.1:8000';
-let publicUrl = 'http://68.43.62.199:8000';
+let publicUrl = 'http://scratchbowling.pythonanywhere.com';
 
 require('dotenv').config();
 
 
 function getUrl()
 {
-	return 'http://scratchbowling.pythonanywhere.com'
+	return localUrl
 }
 
 
@@ -204,7 +204,7 @@ ipcMain.on('syncDone', function (e) {
 });
 
 ipcMain.on('syncError', function (e) {
-	mainWindow.webContents.send('syncError', true);
+	loadWindow.webContents.send('syncError', true);
 });
 
 
@@ -221,16 +221,28 @@ app.on('ready', function()  {
 	autoUpdater.checkForUpdates();
 });
 autoUpdater.on('update-available', (info) => {
-	loginWindow.webContents.send('UpdateFound', true);
+	setTimeout(function(){
+
+		loginWindow.webContents.send('UpdateFound', true);
+	}, 2000);
 });
 autoUpdater.on('update-not-available', (info) => {
-	loginWindow.webContents.send('NoUpdate', true);
+	setTimeout(function(){
+
+		loginWindow.webContents.send('NoUpdate', true);
+	}, 2000);
 });
 autoUpdater.on('error', (err) => {
-	loginWindow.webContents.send('Error', true);
+	setTimeout(function(){
+
+		loginWindow.webContents.send('Error', true);
+	}, 2000);
 });
 autoUpdater.on('update-downloaded', (info) => {
-	loginWindow.webContents.send('Downloaded', true);
+	setTimeout(function(){
+
+		loginWindow.webContents.send('Downloaded', true);
+	}, 2000);
 });
 
 ipcMain.on('QuitInstallUpdate', function (e) {
