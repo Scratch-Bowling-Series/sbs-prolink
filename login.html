@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SBS PROLINK - LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="render/login.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+
+  </head>
+  <body>
+
+    <div class="titlebar">
+      <a class="titlebar-title">SBS <span>PROLINK</span></a>
+      <div class="titlebar-drag"></div>
+      <div class="titlebar-buttons">
+        <a id="t-btn-close" class="titlebar-button titlebar-button-close">
+          <svg aria-hidden="false" width="12" height="12" viewBox="0 0 12 12"><polygon fill="currentColor" fill-rule="evenodd" points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1"></polygon></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="login-container">
+      <img class="logo" src="img/SBS_Logo_White.png" alt="">
+      <h2>ENTER LOGIN DETAILS</h2>
+      <div class="login-form">
+        <input id="email" type="email" name="email" placeholder="Email Address">
+        <input id="password" type="password" name="password" placeholder="Password">
+        <input type="checkbox" name="remember"><label class="checkbox-label">STAY SIGNED IN</label>
+        <input class="signup-button" type="submit" value="CREATE ACCOUNT">
+        <input id='login' class="login-button" type="submit" value="LOGIN">
+      </div>
+    </div>
+  </body>
+</html>

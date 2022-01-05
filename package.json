@@ -19,6 +19,7 @@
     "dotenv": "^10.0.0",
     "electron-log": "^4.4.1",
     "electron-reload": "^2.0.0-alpha.1",
+    "electron-store": "^8.0.1",
     "electron-updater": "^4.3.9",
     "ping": "^0.4.1"
   },

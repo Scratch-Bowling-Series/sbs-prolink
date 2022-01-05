@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UPDATER</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <!-- normal script imports etc  -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/updater/updater.js" ></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+  </head>
+  <body>
+    <div class="titlebar">
+      <a class="titlebar-title">SBS <span>PROLINK</span></a>
+      <div class="titlebar-drag"></div>
+    </div>
+    <div id="updater-container">
+        <img id="updater-load" src="img/loader-1.png" alt="">
+        <img id="updater-download" src="img/loader-2.png" alt="">
+        <div id="updater-done"><i class="fas fa-check"></i></div>
+        <h2 id="updater-text">CHECKING FOR UPDATES</h2>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(()=>{
+
+            console.log('scriptsLoaded');
+        });
+        console.log('scriptsLoaded');
+        const { ipcRenderer } = require('electron');
+
+        function NoUpdates() {
+            $('#updater-done').css('opacity', '1');
+            $('#updater-load').css('opacity', '0');
+            $('#updater-text').text('VERSION IS CURRENT');
+            console.log('VERSION IS CURRENT');
+        }
+
+        ipcRenderer.on('UpdateFound', function()
+        {
+            $('#updater-download').css('opacity', '1');
+            $('#updater-load').css('opacity', '0');
+            $('#updater-text').text('UPDATE FOUND');
+            setTimeout(function()
+            {
+                $('#updater-text').text('DOWNLOADING UPDATE');
+            }, 1000);
+        });
+        ipcRenderer.on('Error', function()
+        {
+            NoUpdates();
+        });
+        ipcRenderer.on('NoUpdate', function()
+        {
+            console.log('noUpdates');
+            NoUpdates();
+        });
+        ipcRenderer.on('Downloaded', function()
+        {
+            $('#updater-text').text('UPDATE DOWNLOADED');
+            $('#updater-download').css('opacity', '0');
+            $('#updater-done').css('opacity', '1');
+            setTimeout(function()
+            {
+                $('#updater-text').text('STARTING UPDATE');
+            }, 1000);
+        });
+    </script>
+  </body>
+</html>
