@@ -1,6 +1,7 @@
 const electron = require('electron');
 const { app, ipcMain } = electron;
 const createUpdateWindow = require('./main/update-process');
+const createMainWindow = require('./main/main-process');
 const log = require("electron-log");
 require('dotenv').config();
 

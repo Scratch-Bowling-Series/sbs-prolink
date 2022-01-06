@@ -1,9 +1,16 @@
 const electron = require('electron');
-const {globalShortcut, BrowserWindow} = electron;
+const createMainWindow = require("./main-process");
+const {create} = require("electron-log");
+const {globalShortcut, BrowserWindow, ipcMain} = electron;
 
 
 let loginWindow = null;
 
+const destroyLoginWindow = () => {
+    if(!loginWindow) return;
+    loginWindow.close();
+    loginWindow = null;
+}
 
 const showLoginWindow = () => {
     globalShortcut.unregister('CommandOrControl+R');
@@ -34,5 +41,9 @@ const showLoginWindow = () => {
     });
 }
 
+ipcMain.on('login-complete',()=>{
+    createMainWindow();
+    destroyLoginWindow();
+});
 
 module.exports = showLoginWindow;

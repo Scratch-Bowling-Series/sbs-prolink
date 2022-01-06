@@ -104,7 +104,7 @@ h2
 		border:none;
 		width:360px;
 		height:40px;
-		margin:20px 20px;
+		margin:10px 20px 20px 20px;
 		padding:0 0 0 10px;
 		display:block;
 		box-sizing:border-box;
@@ -144,6 +144,17 @@ h2
 		display:inline-block;
 		padding:5px 0;
 	}
+	.input-label
+	{
+		font-family:$font-primary-light;
+		vertical-align:top;
+		color:$color-1;
+		font-size:16px;
+		line-height:16px;
+		display:inline-block;
+		margin-left:30px;
+		text-transform: uppercase;
+	}
 
 
 
@@ -157,6 +168,7 @@ h2
 		background:$color-5;
 		color:$color-1;
 		cursor:pointer;
+		font-size:18px;
 	}
 	.signup-button
 	{

@@ -1,6 +1,8 @@
 const electron = require('electron');
 const {globalShortcut, BrowserWindow} = electron;
 
+
+const mainProcessUrl = 'http://localhost:3000';
 let mainWindow = null;
 
 
@@ -29,7 +31,7 @@ const createMainWindow = () => {
         mainWindow.webContents.openDevTools();
     });
     mainWindow.center();
-    mainWindow.loadURL('./index.html').then(() => {
+    mainWindow.loadURL(mainProcessUrl).then(() => {
         mainWindow.show();
     }).catch((error)=>{
         console.log(error);

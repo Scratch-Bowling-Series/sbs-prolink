@@ -1,5 +1,4 @@
-const { remote } = require('electron');
-const mainProcess = remote.require('./main/main-process');
+const { ipcRenderer, remote } = require('electron');
 const {apiPost} = require("./services/api");
 const Store = require('electron-store');
 const store = new Store();
@@ -9,7 +8,6 @@ let email, password = '';
 
 
 const performSignIn = async (email, password) => {
-    console.log(email, password);
     let formData = new FormData();
     formData.append('email', email.toLowerCase());
     formData.append('password', password.toString())
@@ -38,8 +36,7 @@ $(document).ready(() => {
        if(email.length > 0 && password.length > 0){
            performSignIn(email, password).then((success)=>{
                if(success){
-                   mainProcess.createMainWindow();
-                   remote.getCurrentWindow().close()
+                   ipcRenderer.send('login-complete', true);
                }
            }).catch((error)=>{
                 console.log(error);
