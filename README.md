@@ -23,6 +23,7 @@
 - [Status](#status)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Contributing](#contributing)
+- [Recent Screenshots](#recent-screenshots)
 - [Creators](#creators)
 - [SBS Ecosystem](#the-sbs-ecosystem)
 - [Copyright and license](#copyright-and-license)
@@ -37,7 +38,7 @@ If you are on Windows,
 2. Run the Installer
 
 otherwise if you own a Mac,
-1. Download [sbs-prolink-1.1.4-mac.pkg]()
+1. Download [sbs-prolink-1.1.4-mac.exe]()
 2. Run the Installer
 
 and for linux users,
@@ -70,6 +71,12 @@ Please read through our [contributing guidelines](https://reponame/blob/master/C
 Moreover, all code should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Christian J Starr](https://github.com/christianjstarr).
 
 Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. 
+
+## Recent Screenshots
+![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_1.png?raw=true)
+![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_2.png?raw=true)
+![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_3.png?raw=true)
+
 ## Creators
 
 **Christian J Starr**
