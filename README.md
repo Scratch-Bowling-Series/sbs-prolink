@@ -76,7 +76,6 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
 ![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_1.png?raw=true)
 ![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_2.png?raw=true)
 ![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_3.png?raw=true)
-![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_4.png?raw=true)
 
 ## Creators
 
