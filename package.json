@@ -1,46 +1,66 @@
 {
-  "name": "sbs-prolink",
-  "productName": "SBS Prolink",
+  "name": "prolink",
   "version": "1.1.4",
-  "description": "SBS Tournament Software",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder -p always"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^13.1.8",
-    "electron-builder": "^22.11.7"
-  },
+  "private": true,
+  "main": "public/main.js",
+  "homepage": "./",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "electron-log": "^4.4.1",
-    "electron-reload": "^2.0.0-alpha.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "atomically": "^1.7.0",
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "electron": "^16.0.6",
+    "electron-builder": "^22.14.5",
     "electron-store": "^8.0.1",
-    "electron-updater": "^4.3.9",
-    "ping": "^0.4.1"
+    "electron-updater": "^4.6.1",
+    "electronmon": "^2.0.2",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-charts": "^3.0.0-beta.34",
+    "react-dom": "^17.0.2",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "recharts": "^2.1.8",
+    "stream": "0.0.2",
+    "usb": "^2.0.3",
+    "wait-on": "^6.0.0",
+    "web-vitals": "^2.1.2"
   },
-  "build": {
-    "appId": "com.sbs.prolink",
-    "win": {
-      "target": "nsis",
-      "verifyUpdateCodeSignature": false,
-      "publish": {
-        "provider": "github",
-        "owner": "ChristianJStarr",
-        "repo": "sbs-prolink",
-        "private": false,
-        "publishAutoUpdate": true,
-        "releaseType": "release"
-      },
-      "certificateFile": "mypfx.pfx",
-      "certificatePassword": "password"
-    },
-    "nsis": {
-      "deleteAppDataOnUninstall": true
-    }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:start": "concurrently -k \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electronmon .\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "electron-log": "^4.4.4"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }
