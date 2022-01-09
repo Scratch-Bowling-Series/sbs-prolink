@@ -1,70 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="center">
+  <a href="https://scratchbowling.pythonanywhere.com">
+    <img src="https://scratchbowling.pythonanywhere.com/static/img/SBS_Logo.png" alt="Logo" width=142 >
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">SBS PROLINK</h3>
 
-### `npm start`
+  <p align="center">
+    Management Software
+    <br>
+    <a href="https://reponame/issues/new?template=bug.md">Report bug</a>
+    ·
+    <a href="https://reponame/issues/new?template=feature.md&labels=feature">Request feature</a>
+  </p>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of contents
 
-### `npm test`
+- [Installation](#installation)
+- [Status](#status)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Contributing](#contributing)
+- [Creators](#creators)
+- [SBS Ecosystem](#the-sbs-ecosystem)
+- [Copyright and license](#copyright-and-license)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you are on Windows,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Download [sbs-prolink-1.1.4-win.exe]()
+2. Run the Installer
 
-### `npm run eject`
+otherwise if you own a Mac,
+1. Download [sbs-prolink-1.1.4-mac.pkg]()
+2. Run the Installer
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+and for linux users,
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Download [sbs-prolink-1.1.4-linux.tar]()
+2. Run the Installer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Status
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+We still have lots to do! Prolink is in its early beta stages of development. We plan to get everything up and running as soon as possible. At this time only staff members with specific account privledges can login to the software for testing. You can learn more about this [here](https://scratchbowling.com/).
+#### Recent Progress
+- Banking API Implimentation
+- Analytics Graphing
+- UI Rebuild with React
+- Auto-Updater/Installer
+#### Things on the block
+- Drawer Management
+- Permissions Managment
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Bugs and feature requests
 
-### Code Splitting
+Have a bug or a feature request? Please first read the [issue guidelines](https://reponame/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://reponame/issues/new).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Please read through our [contributing guidelines](https://reponame/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Moreover, all code should conform to the [Code Guide](https://github.com/mdo/code-guide), maintained by [Christian J Starr](https://github.com/christianjstarr).
 
-### Making a Progressive Web App
+Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. 
+## Creators
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Christian J Starr**
 
-### Advanced Configuration
+- <https://github.com/christianjstarr>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## The SBS Ecosystem
+- SBS Prolink (Managment Software)
+- [SBS Bowler (Bowler Companion App)](https://github.com/ChristianJStarr/sbs-bowler)
+- [SBS App (Primary Mobile App)](https://github.com/ChristianJStarr/sbs-bowler)
+- [SBS Web (New Website & REST API)](https://github.com/ChristianJStarr/Scratch-Bowling-Series-Website)
 
-### Deployment
+## Copyright and license
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Code and documentation copyright 2021-2022 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
