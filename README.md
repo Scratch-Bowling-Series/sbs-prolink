@@ -73,9 +73,9 @@ Moreover, all code should conform to the [Code Guide](https://github.com/mdo/cod
 Editor preferences are available in the [editor config](https://reponame/blob/master/.editorconfig) for easy use in common text editors. 
 
 ## Recent Screenshots
-![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_1.png?raw=true)
-![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_2.png?raw=true)
-![alt text](https://github.com/ChristianJStarr/sbs-prolink/blob/main/screenshots/Screenshot_3.png?raw=true)
+![alt text](https://github.com/Scratch-Bowling-Series/sbs-prolink/blob/main/screenshots/Screenshot_1.png?raw=true)
+![alt text](https://github.com/Scratch-Bowling-Series/sbs-prolink/blob/main/screenshots/Screenshot_2.png?raw=true)
+![alt text](https://github.com/Scratch-Bowling-Series/sbs-prolink/blob/main/screenshots/Screenshot_3.png?raw=true)
 
 ## Creators
 
@@ -85,10 +85,10 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
 
 ## The SBS Ecosystem
 - SBS Prolink (Managment Software)
-- [SBS Bowler (Bowler Companion App)](https://github.com/ChristianJStarr/sbs-bowler)
-- [SBS App (Primary Mobile App)](https://github.com/ChristianJStarr/sbs-bowler)
-- [SBS Web (New Website & REST API)](https://github.com/ChristianJStarr/Scratch-Bowling-Series-Website)
+- [SBS Bowler (Bowler Companion App)](https://github.com/Scratch-Bowling-Series/sbs-bowler)
+- [SBS App (Primary Mobile App)](https://github.com/Scratch-Bowling-Series/sbs-bowler)
+- [SBS Web (New Website & REST API)](https://github.com/Scratch-Bowling-Series/sbs-website)
 
 ## Copyright and license
 
-Code and documentation copyright 2021-2022 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
+Code and documentation copyright 2021-2022 the authors. Code released under the [MIT License](https://github.com/Scratch-Bowling-Series/sbs-website/blob/master/LICENSE).
